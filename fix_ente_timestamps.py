@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Ente Photos to iCloud Migration Tool
+Ente Photos Export Timestamp Tool
 
 Fixes file timestamps from Ente Photos exports by reading the original
 capture time from companion JSON metadata files and applying them using exiftool.
@@ -370,7 +370,7 @@ def find_albums(input_dir: Path) -> list[Path]:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Fix Ente Photos export timestamps for iCloud import",
+        description="Fix Ente Photos export timestamps",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Example:
